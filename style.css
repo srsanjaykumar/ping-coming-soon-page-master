@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body{
+    font-family: "Libre Franklin", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3rem   auto;
+  
+    padding: 20px;
+    text-align: center;
+   
+}
+
+h1{
+   font-size: 3rem; 
+   font-weight: 400;
+   color: var(--gray);
+   margin: 1rem 0;
+}
+
+
+h1 span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 2rem;
+}
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+}
+.email input{
+    width:30%;
+    /* width: 350px; */
+    padding:0.9rem 1.3rem;
+    border: 1px solid var(--gray);
+    border-radius: 2rem;
+    font-size: 1rem;
+    
+}
+
+button{
+    padding: 0.9rem 1.9rem;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+section img{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 2rem auto 3rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin-top: 2rem;
+}
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+i{
+    font-size: 1.2rem;
+    color: var(--blue);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    /* padding: 0.7rem; */
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+}
+i:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+.icon-1{
+    padding: 0.7rem 0.9rem;
+}
+
+.icon-2 , .icon-3{
+    padding: 0.7rem;
+}
+
+/* .icon{
+    padding: 0.8rem;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+} */
+
+
+@media (max-width: 698px) {
+    
+    h1 {
+        font-size: 7vw;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .email{
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+    .email input {
+        width: 100%;
+        max-width: 350px;
+    }
+    .email button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer p{
+        font-size: 4vw;
+    }
+}
