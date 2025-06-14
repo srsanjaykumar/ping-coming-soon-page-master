@@ -49,23 +49,59 @@ header p {
     color: var(--very-dark-blue);
     margin-bottom: 2rem;
 }
+
+
 .email {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
     margin-bottom: 3rem;
-    
 }
-.email input{
-    width:30%;
-    /* width: 350px; */
+
+
+
+.mail-box {
+   width: 45%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+
+.mail-box input{
+    
+    width: 100%;
     padding:0.9rem 1.3rem;
     border: 1px solid var(--gray);
     border-radius: 2rem;
     font-size: 1rem;
     
 }
+
+
+
+.mail-box p {
+    font-size: 1rem;
+    color: var(--light-red);
+    text-align: left;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    
+}
+
+.hide-error {
+    display: none;
+}
+
+.show-error {
+    display: block;
+}
+
+
 
 button{
     padding: 0.9rem 1.9rem;
@@ -89,6 +125,8 @@ footer p {
     color: var(--gray);
     margin-top: 2rem;
 }
+
+
 footer .social {
     display: flex;
     justify-content: center;
@@ -96,15 +134,19 @@ footer .social {
     gap: 1.5rem;
     margin-top: 1rem;
 }
+
+
+
 i{
     font-size: 1.2rem;
     color: var(--blue);
     cursor: pointer;
     transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
-    /* padding: 0.7rem; */
     border: 1px solid var(--blue);
     border-radius: 50%;
 }
+
+
 i:hover {
     color: white;
     background-color: var(--blue);
@@ -117,12 +159,6 @@ i:hover {
 .icon-2 , .icon-3{
     padding: 0.7rem;
 }
-
-/* .icon{
-    padding: 0.8rem;
-    border: 1px solid var(--blue);
-    border-radius: 50%;
-} */
 
 
 @media (max-width: 698px) {
@@ -138,10 +174,15 @@ i:hover {
         max-width: 100%;
     }
     .email{
+        align-items: center;
         flex-direction: column;
         gap: 0.9rem;
     }
-    .email input {
+    .mail-box {
+        width: 100%;
+        max-width: 350px;
+    }
+    .mail-box input {
         width: 100%;
         max-width: 350px;
     }

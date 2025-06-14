@@ -16,8 +16,12 @@
       <h1>We are launching <span>soon!</span></h1>
       <p>Subscribe and get notified</p>
       <div class="email">
-        <input type="email" name="" placeholder="Your email address..." id="">
-        <button type="submit">Notify Me</button>
+        <div class="mail-box">
+          <input type="email" name="" placeholder="Your email address..." id="">
+          <p class="error-message hide-error">please provide a valid email </p>
+        </div>
+        
+        <button class="error-button" type="submit">Notify Me</button>
       </div>
     </header>
     <section>
@@ -34,5 +38,5 @@
     </footer>
   </div>
 </body>
-
+<script src="./index.js"></script>
 </html>
